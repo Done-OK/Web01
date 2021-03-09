@@ -1,0 +1,402 @@
+/* Reset CSS */
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+}
+
+#header {
+    height: 46px;
+    background-color: black;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+#nav {
+    list-style-type: none;
+    display: inline-block;
+}   
+
+#nav > li {
+    display: inline-block;
+    position: relative;
+    padding: 0 21px ;
+    list-style-type: none;
+}
+
+
+/* Định dạng CSS cho các chữ Navigator trong thanh điều hướng */
+
+#nav > li > a {
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    font-family: 'verdana', sans-serif;
+    font-weight: 500;
+    line-height: 46px;
+    display: block;
+}
+
+.arrow-down {
+    font-size: 14px;
+}
+
+#nav > li:hover {
+    background-color: #ccc;
+}
+
+li:hover > .subnav {
+    display: block;
+}
+
+#nav >li:hover >a {
+    color:black;
+    font-weight: 500;
+}
+
+/* -----Định dạng CSS cho lớp subnav----- */
+.subnav {
+    background-color: white;
+    position: absolute;
+    left: 0px;
+    display: none;
+    box-shadow: 0px 5px 5px rgb(80, 80, 80);
+}
+
+.subnav > li {
+    display: inline-block;
+    min-width: 160px;
+    list-style-type: none;
+}
+
+.subnav >li >a {
+    line-height: 40px;
+    color:rgba(0, 0, 0, 0.7);
+    text-decoration: none;
+    padding-left: 12px;
+    font-family: 'verdana', sans-serif;
+    font-size: 14px;
+}
+
+.subnav > li:hover {
+    display: block;
+    background-color: #ccc;
+}
+.subnav > li:hover > a {
+    color: black;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+#header-search {
+    float: right;
+    display: inline-block;
+    padding: 0 16px;
+}
+
+#header-search > .search-btn {
+    font-size: 16px;
+    line-height: 46px;
+    color: white;
+}
+
+#header-search:hover {
+    background-color: tomato;
+}
+
+#header-search:hover > .search-btn{
+    font-size: 20px;
+}
+
+#slider {
+    margin-top: 46px;
+    position: relative;
+    padding-top: 50%;
+    background: url('/img/chicago.jpg') top center/ cover no-repeat;
+}
+
+/* CSS cho phần chữ miêu tả hình ảnh */
+
+#slider > #slider-describ {
+    position: absolute;
+    bottom: 0px;
+    display: inline-block;
+    text-align: center;
+    padding: 32px 16px; 
+    width: 100%;
+}
+
+#slider-describ > h2{
+    color: white;
+    margin: 10px 0px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+} 
+
+#slider-describ > p{
+    color: white;
+    margin: 15px 0px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22.5px;
+}
+
+#content {
+
+}
+
+#about-section { 
+    padding: 64px 16px;
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-header > h2 {
+    margin: 10px 0px;
+    letter-spacing: 4px;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 45px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: black;
+}
+
+.section-header > p {
+    margin: 15px 0px;
+    font-style: italic;
+    opacity: 0.8;
+    font-size: 15px;
+    line-height: 22.5px;
+    color: black;
+}
+
+#about-section > .content {
+    text-align: justify;
+    margin: 15px 0px;
+    font-size: 15px;
+    line-height: 1.5;
+    color: black;
+}
+
+#about-section > #member {
+    padding: 32px 0px;
+    display: inline-block;
+    width: 100%;
+}
+
+#member > #band-members {
+    float: left;
+    display: inline-block;
+    width: 33.33%;
+}
+
+#band-members > .band-image {
+    width: 154px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+}
+#band-members > p {
+    margin: 15px 0px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* Begin tour date---------------------------------------- */
+
+#tour-dates {
+    background-color: black;
+    padding: 64px 16px;
+}
+
+#tour-dates > .section-header > h2 {
+    color:white;
+    width: 100%;
+    text-align: center;
+}
+
+#tour-dates > .section-header > p {
+    color: white;
+    text-align: center;
+}
+#tour-month {
+    background-color: white;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    list-style-type: none;
+}
+
+#tour-month > li {
+    color: #757575;
+    padding: 8px 16px;
+    border-bottom: 1px solid #ccc;
+}
+
+.ticket-status {
+    color: white;
+    background-color: #f44336;
+    padding: 3px 4px;
+    margin-left: 16px;
+}
+
+.quantity{
+    background-color: black;
+    color: white;
+    border-radius: 100%;
+    float: right;
+    padding: 1px 8px;
+}
+
+#places-list {
+    margin-top: 15px;
+    max-width: 800px;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.place-review {
+    float: left;
+    width: 33.3333%;
+    padding: 0px 8px;
+}
+
+.place-review > img {
+    width: 100%;
+    display: block;
+}
+
+.place-review > img:hover {
+    opacity: 0.6;
+}
+
+.review {
+    padding: 16px;
+    background-color: white;
+}
+
+.city {
+    padding: 15px 0px;
+    font-weight: 600;
+    color: black;
+}
+
+.date {
+    padding: 15px 0px;
+    opacity: 0.65;
+}
+
+.info {
+    padding: 15px 0px;
+
+}
+
+.review #buy-btn{
+    padding: 8px 16px;
+    background-color: black;
+    color: white;
+    display: inline-block;
+}
+
+.review #buy-btn:hover{
+    background-color: #ccc ;
+    color: black;
+    cursor: pointer;
+}
+
+/* CSS cho contact-section---------------------------------------- */
+
+#contact {
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 64px 16px;
+    text-align: center;
+}
+
+#contact-info {
+    padding: 32px 0px;
+}
+
+#band-info{
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 16px;
+}
+
+#band-info > p {
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+}
+
+.info-icon {
+    margin-right: 10px;
+}
+
+#contact-form {
+    display: inline-block;
+    float: right;
+    width: 50%;
+}
+
+#contact-form > #name {
+    width: 50%;
+    display: inline-block;
+}
+
+#contact-form > #email {
+    width: 50%;
+    float: right;
+    display: inline-block;
+}
+
+#contact-form > #message {
+    width: 100%;
+}
+
+#contact-form > input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    /* margin: 2px; */
+    display: inline-block;
+}
+
+#map {
+    background: url(/img/map.jpg) top center / cover no-repeat;
+    padding-top: 56.27%;
+}
+
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+}
+
+#footer #social-list > a {
+    font-size: 24px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7);
+    margin: 0px 5px;
+}
+
+#footer > a,.ending {
+    color: rgba(0, 0, 0, 0.7);
+    margin: 15px 0px;
+}
+
+.social-list-icon:hover, #footer a:hover {
+    opacity: 0.4;
+}

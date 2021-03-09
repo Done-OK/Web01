@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Documents\\Project\\.net\\01\\Web01\\Web01\\Web01.csproj",
+      "projectUniqueName": "D:\\Github\\Web01\\Web01\\Web01.csproj",
       "projectName": "Web01",
-      "projectPath": "D:\\Documents\\Project\\.net\\01\\Web01\\Web01\\Web01.csproj",
+      "projectPath": "D:\\Github\\Web01\\Web01\\Web01.csproj",
       "packagesPath": "C:\\Users\\Done\\.nuget\\packages\\",
-      "outputPath": "D:\\Documents\\Project\\.net\\01\\Web01\\Web01\\obj\\",
+      "outputPath": "D:\\Github\\Web01\\Web01\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
